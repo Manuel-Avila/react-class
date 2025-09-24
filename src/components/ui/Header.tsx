@@ -30,7 +30,7 @@ export default function Header() {
       <nav className="hidden xs:flex items-center h-full gap-8">
         <NavLink to="/">Inicio</NavLink>
         <NavLink to="/">Libros</NavLink>
-        <NavLink to="/">Cursos</NavLink>
+        <NavLink to="/user-list">UserList</NavLink>
       </nav>
 
       <div className="relative" ref={menuRef}>
@@ -70,11 +70,11 @@ export default function Header() {
               Libros
             </NavLink>
             <NavLink
-              to="/"
+              to="/user-list"
               className="hamburguer-link"
               onClick={() => setIsMenuOpen(false)}
             >
-              Cursos
+              UserList
             </NavLink>
           </nav>
         )}
