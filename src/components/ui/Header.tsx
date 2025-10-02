@@ -29,7 +29,7 @@ export default function Header() {
       <h2 className="text-primary-red font-bold text-2xl">Bookify</h2>
       <nav className="hidden xs:flex items-center h-full gap-8">
         <NavLink to="/">Inicio</NavLink>
-        <NavLink to="/">Libros</NavLink>
+        <NavLink to="/mp3">MP3</NavLink>
         <NavLink to="/user-list">UserList</NavLink>
       </nav>
 
@@ -63,11 +63,11 @@ export default function Header() {
               Inicio
             </NavLink>
             <NavLink
-              to="/"
+              to="/mp3"
               className="hamburguer-link xs:hidden"
               onClick={() => setIsMenuOpen(false)}
             >
-              Libros
+              MP3
             </NavLink>
             <NavLink
               to="/user-list"
